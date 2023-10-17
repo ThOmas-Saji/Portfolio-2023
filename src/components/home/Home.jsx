@@ -31,7 +31,7 @@ const slideVariants = {
   animate: {
     x: "-20%",
     transition: {
-      duration: 20,
+      duration: 10,
       repeatType: "mirror",
       repeat: Infinity,
     },
