@@ -1,0 +1,126 @@
+@import "../../app.scss";
+
+.portfolio {
+  position: relative;
+  .progress {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: linear-gradient(90deg, #111132, #000);
+    z-index: 6;
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      color: orange;
+    }
+    .progressbar {
+      height: 10px;
+      background-color: #fff;
+      border-radius: 12px;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      max-width: 1266px;
+      .image_container {
+        flex: 1;
+        width: 50%;
+        border-radius: 12px;
+        border: 3px solid orange;
+        img {
+          border-radius: 12px;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .text_container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 16px;
+          color: grey;
+        }
+      }
+      .btn_wrapper {
+        display: flex;
+        gap: 20px;
+        a {
+          padding: 6px 15px;
+          border-radius: 8px;
+          background-color: transparent;
+          border: none;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 400;
+          transition: all 0.4s;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+          }
+        }
+        .btn_orange {
+          background-color: orange;
+        }
+        .btn_white {
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+
+  @include mobile_screen {
+    padding: 10px;
+    .progress {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .container {
+      padding: 50px 10px 0px 10px;
+      .wrapper {
+        flex-direction: column;
+        .image_container {
+          width: 100%;
+        }
+        .text_container {
+          gap: 14px;
+          h2 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+        .btn_wrapper {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 348px) {
+    .progress {
+      h1 {
+        font-size: 22px;
+      }
+    }
+  }
+}
