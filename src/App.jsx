@@ -6,6 +6,9 @@ import Portfolio from "./components/portfolio/Portfolio";
 import "./app.scss";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
+import mixpanel from "mixpanel-browser";
+
+mixpanel.init(import.meta.env.VITE_PROJECT_KEY, { track_pageview: true });
 
 const App = () => {
   return (
