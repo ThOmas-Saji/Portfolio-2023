@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import "./sidebar.scss";
 
-const linksData = ["Home", "About", "Projects", "Contact"];
+const linksData = ["Home", "About", "Expertise", "Projects", "Contact"];
 
 // framer animations
 const variants = {
@@ -62,7 +62,7 @@ const Sidebar = () => {
             {linksData?.map((link, key) => (
               <motion.a
                 onClick={() => {
-                  setTimeout(setOpen(false), 500);
+                  setTimeout(() => setOpen(false), 500);
                 }}
                 href={`#${link}`}
                 key={key}

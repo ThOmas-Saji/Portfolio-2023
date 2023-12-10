@@ -7,6 +7,7 @@ import "./app.scss";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 import mixpanel from "mixpanel-browser";
+import Expertise from "./components/expertise/Expertise";
 
 mixpanel.init(import.meta.env.VITE_PROJECT_KEY, { track_pageview: true });
 
@@ -19,6 +20,9 @@ const App = () => {
       </section>
       <section id="About">
         <About />
+      </section>
+      <section id="Expertise">
+        <Expertise />
       </section>
       <div id="Projects">
         <Portfolio />
