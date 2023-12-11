@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import { useScroll, useSpring, motion, useTransform } from "framer-motion";
+import { myProjects } from "./projects";
 
 const data = [
   {
@@ -82,21 +83,23 @@ const SingleProject = ({ item }) => {
             }}
             className="image_container"
           >
-            <img src={item?.image} />
+            <img src={item?.thumbnail} />
           </motion.div>
           <motion.div className="text_container" style={{ y }}>
             <h2>{item?.title}</h2>
-            <p>{item?.des}</p>
-            <p>{item?.ts}</p>
+            <p>{item?.description}</p>
+            <p>{item?.techStack}</p>
             <div className="btn_wrapper">
-              <a
-                href={item?.github}
-                className="btn_orange"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
+              <button className="glowing-box">
+                <a
+                  href={item?.gitHubLink}
+                  // className="btn_orange"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+              </button>
               <a
                 href={item?.live}
                 className="btn_white"
@@ -131,7 +134,7 @@ const Portfolio = () => {
         <h1>My Projects</h1>
         <motion.div style={{ scaleX }} className="progressbar"></motion.div>
       </div>
-      {data?.map((item) => (
+      {myProjects?.map((item) => (
         <SingleProject item={item} key={item?.id} />
       ))}
     </div>

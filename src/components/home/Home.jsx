@@ -51,11 +51,12 @@ const Home = () => {
         >
           <motion.h2 variants={textVariants}>Thomas Saji</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer (MERN stack)
+            Web developer (MERN Stack)
           </motion.h1>
           <motion.div variants={textVariants} className="btns">
             <motion.button
               variants={textVariants}
+              className="glowing-box"
               whileHover={{
                 backgroundColor: "#fff",
                 color: "#000",
@@ -64,11 +65,12 @@ const Home = () => {
               <a href="#Projects">See the Latest Works</a>
             </motion.button>
             <motion.button
+              className="btn-2"
+              variants={textVariants}
               whileHover={{
                 backgroundColor: "#fff",
                 color: "#000",
               }}
-              variants={textVariants}
             >
               <a href="#Contact">Contact Me</a>
             </motion.button>

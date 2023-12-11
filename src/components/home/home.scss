@@ -40,9 +40,12 @@
           border-radius: 8px;
           border: 1px solid #fff;
           color: #fff;
-          background-color: transparent;
           cursor: pointer;
+          background-color: transparent;
           z-index: 10;
+        }
+        .btn-2 {
+          border: 1px solid #fff;
         }
       }
 
@@ -91,6 +94,11 @@
         }
         h1 {
           font-size: 30px;
+        }
+        .btns {
+          button {
+            border: none;
+          }
         }
       }
     }

@@ -21,13 +21,32 @@ a {
 }
 
 section {
-  height: 100vh;
-  scroll-snap-align: center;
+  height: 100dvh;
+  scroll-snap-align: start;
 }
 
 // media query
 @mixin mobile_screen {
   @media (max-width: 767px) {
     @content;
+  }
+}
+
+// common styles
+
+.glowing-box {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  &:hover {
+    box-shadow: 0 0 10px #01e2f6;
+    text-shadow: 0 0 5px #01e2f6;
+  }
+  @media (max-width: 767px) {
+    box-shadow: 0 0 10px #01e2f6;
+    a {
+      // color: #01e2f6;
+      text-shadow: 0 0 2px #01e2f6;
+    }
   }
 }

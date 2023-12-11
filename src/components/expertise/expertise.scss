@@ -13,19 +13,21 @@
     text-align: center;
     font-size: 36px;
     text-shadow: 0 0 15px #01e2f6;
-    padding-top: 20px;
+    padding: 10px 0 0 0;
   }
   .tools-container {
-    width: 48dvw;
-    min-height: 60dvh;
+    width: 45%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
-    box-shadow: 0px 0px 5px #01e2f6;
     border-radius: 10px;
     padding: 20px;
+    &:hover {
+      box-shadow: 0px 0px 5px #01e2f6;
+    }
     .title {
       width: 100%;
       text-align: center;
@@ -87,26 +89,28 @@
   @include mobile_screen {
     flex-direction: column;
     align-items: center;
+    gap: 5px;
     .main-title {
       font-size: 20px;
       padding: 0;
     }
     .tools-container {
+      width: 90%;
+      height: 35%;
       padding: 0;
       box-shadow: none;
+      gap: 5px;
       .title {
         font-size: 12px;
-        padding: 5px 0;
+        padding: 10px 0 0 0;
       }
-      width: 80%;
-      min-height: fit-content;
       .tool {
         gap: 10px;
         box-shadow: 0 0 5px #01e2f6;
         img {
           padding: 2px;
-          width: 15px;
-          height: 15px;
+          width: 20px;
+          height: 20px;
         }
         .name {
           font-size: 10px;
