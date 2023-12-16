@@ -25,6 +25,37 @@ section {
   scroll-snap-align: center;
 }
 
+/* Media queries for adjusting font size on different screen sizes */
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 60%; /* Adjust the base font size for smaller screens */
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 90%; /* Adjust the base font size for medium screens */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 45%; /* Default font size for larger screens */
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1524px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (min-width: 1525px) and (max-width: 2800px) {
+  html {
+    font-size: 80%;
+  }
+}
+
 // media query
 @mixin mobile_screen {
   @media (max-width: 767px) {

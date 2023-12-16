@@ -10,6 +10,7 @@
   align-items: center;
   gap: 30px;
   overflow: hidden;
+  padding: 0 5%;
 
   .contacts {
     flex: 1;
@@ -18,16 +19,16 @@
     flex-direction: column;
     gap: 30px;
     h2 {
-      font-size: 60px;
+      font-size: 6rem;
       line-height: 55px;
     }
     .item {
       h3 {
-        font-size: 26px;
+        font-size: 2.6rem;
         color: grey;
       }
       span {
-        font-size: 18px;
+        font-size: 1.8rem;
       }
     }
   }
@@ -62,7 +63,7 @@
         resize: vertical;
         padding: 15px;
         color: #fff;
-        font-size: 18px;
+        font-size: 1.8rem;
       }
       button {
         width: 200px;
@@ -71,7 +72,7 @@
         background-color: orange;
         border: 1px solid #000;
         color: #000;
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: 400;
         transition: all 0.4s;
         &:hover {
@@ -91,14 +92,14 @@
       max-height: 50%;
       gap: 10px;
       h2 {
-        font-size: 30px;
+        font-size: 3rem;
       }
       .item {
         h3 {
-          font-size: 16px;
+          font-size: 1.6rem;
         }
         span {
-          font-size: 14px;
+          font-size: 1.4rem;
         }
       }
     }
@@ -124,12 +125,12 @@
           background-color: transparent;
           border-radius: 8px;
           resize: vertical;
-          font-size: 14px;
+          font-size: 1.4rem;
           padding: 10px;
           color: #fff;
         }
         button {
-          font-size: 14px;
+          font-size: 1.4rem;
           width: 100%;
           padding: 6px 15px;
           border-radius: 4px;

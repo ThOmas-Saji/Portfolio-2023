@@ -3,6 +3,7 @@
 .navbar {
   height: 100px;
   background: linear-gradient(90deg, #111132, #000);
+  padding: 0 10%;
 
   .wrapper {
     max-width: 1266px;
@@ -11,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    font-size: 1.6rem;
     @include mobile_screen {
       display: none;
     }
@@ -19,7 +21,8 @@
     }
 
     .social {
-      display: flex;
+      // display: flex;
+      display: none;
       align-items: center;
       gap: 20px;
 
