@@ -26,14 +26,18 @@
     border-radius: 10px;
     padding: 20px;
     &:hover {
-      box-shadow: 0px 0px 5px #01e2f6;
+      // box-shadow: 0px 0px 5px #01e2f6;
+      .title {
+        // font-size: 2rem;
+        text-shadow: 0 0 25px #fff;
+      }
     }
     .title {
+      transition: all 0.4s;
       width: 100%;
       text-align: center;
       padding: 10px;
-      font-size: 2rem;
-      text-shadow: 0 0 25px #fff;
+      font-size: 1.8rem;
     }
     .tool {
       position: relative;

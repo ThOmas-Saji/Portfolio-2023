@@ -20,7 +20,7 @@ const SingleProject = ({ item }) => {
           <motion.div
             style={{
               x: -100,
-              transition:'all 0s'
+              transition: "all 0s",
             }}
             whileInView={{
               x: 0,
@@ -34,24 +34,28 @@ const SingleProject = ({ item }) => {
             <p>{item?.description}</p>
             <p>{item?.techStack}</p>
             <div className="btn_wrapper">
-              <button className="glowing-box">
+              {item?.gitHubLink && (
+                <button className="glowing-box">
+                  <a
+                    href={item?.gitHubLink}
+                    // className="btn_orange"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
+                </button>
+              )}
+              {item?.live && (
                 <a
-                  href={item?.gitHubLink}
-                  // className="btn_orange"
+                  href={item?.live}
+                  className="btn_white"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Github
+                  Live Demo
                 </a>
-              </button>
-              <a
-                href={item?.live}
-                className="btn_white"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Demo
-              </a>
+              )}
             </div>
           </motion.div>
         </motion.div>
