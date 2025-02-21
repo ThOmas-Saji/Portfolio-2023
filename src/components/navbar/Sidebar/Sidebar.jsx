@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import "./sidebar.scss";
@@ -53,7 +53,12 @@ const listChildVariants = {
   },
 };
 const Sidebar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
+
+  useEffect(() => {
+    setOpen(false)
+  }, []);
+
   return (
     <motion.div className="sidebar" animate={open ? "open" : "closed"}>
       <motion.div variants={variants} className="bg">
