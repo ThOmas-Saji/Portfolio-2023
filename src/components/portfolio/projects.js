@@ -1,15 +1,15 @@
 export const myProjects = [
-    {
-        id: 7,
-        title: "Cur8",
-        description: `Cur8: The Ultimate NFT Experience \n
-        Discover the most advanced platform for NFTs, designed to seamlessly manage, showcase, and enhance your digital assets across multiple blockchains—all in one secure hub. Explore curated collections of art, music, photography, and more while connecting directly with creators and collectors worldwide.`,
-        techStack: "ReactJS | Redux | JavaScript | HTML | Tailwind CSS",
-        thumbnail: "/Recent-Projects/cur8.webp",
-        gitHubLink: "",
-        live: "https://www.cur8.io/home",
-        videoSrc: '',
-    },
+    // {
+    //     id: 7,
+    //     title: "Cur8",
+    //     description: `Cur8: The Ultimate NFT Experience \n
+    //     Discover the most advanced platform for NFTs, designed to seamlessly manage, showcase, and enhance your digital assets across multiple blockchains—all in one secure hub. Explore curated collections of art, music, photography, and more while connecting directly with creators and collectors worldwide.`,
+    //     techStack: "ReactJS | Redux | JavaScript | HTML | Tailwind CSS",
+    //     thumbnail: "/Recent-Projects/cur8.webp",
+    //     gitHubLink: "",
+    //     live: "https://www.cur8.io/home",
+    //     videoSrc: '',
+    // },
     {
         id: 1,
         title: "Tagpay",
